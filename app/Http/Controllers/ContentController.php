@@ -26,4 +26,10 @@ class ContentController extends Controller
         $new_content->save();
         return redirect(route('contents.index'));
     }
+
+    public function detail($contents_id)
+    {
+        $content = Content::find($contents_id);
+        return view('contents.detail', ['content' => $content]);
+    }
 }

@@ -27,3 +27,4 @@ Route::get ('/settings/index', 'SettingController@index')->name('settings.index'
 Route::get ('/contents/index', 'ContentController@index')->name('contents.index');
 Route::get ('/contents/new', 'ContentController@new')->name('contents.new');
 Route::post ('/contents/create', 'ContentController@create')->name('contents.create');
+Route::get ('/contents/detail/{contents_id}', 'ContentController@detail')->name('contents.detail');
