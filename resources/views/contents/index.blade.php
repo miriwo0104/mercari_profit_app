@@ -13,8 +13,9 @@
             <p>{{$content['title']}}</p>
             <br>
             <p>{{$content['memo']}}</p>
-            <div class="detail_button">
+            <div class="button">
                 <input type="button" onclick="location.href='{{route('contents.detail', ['contents_id' => $content['id']])}}'" value="詳細">
+                <input type="button" onclick="location.href='{{route('contents.edit', ['contents_id' => $content['id']])}}'" value="編集">
             </div>
         @endforeach
     </div>

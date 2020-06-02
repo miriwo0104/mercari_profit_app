@@ -28,3 +28,5 @@ Route::get ('/contents/index', 'ContentController@index')->name('contents.index'
 Route::get ('/contents/new', 'ContentController@new')->name('contents.new');
 Route::post ('/contents/create', 'ContentController@create')->name('contents.create');
 Route::get ('/contents/detail/{contents_id}', 'ContentController@detail')->name('contents.detail');
+Route::get ('/contents/edit/{contents_id}', 'ContentController@edit')->name('contents.edit');
+Route::post ('/contents/save', 'ContentController@save')->name('contents.save');
