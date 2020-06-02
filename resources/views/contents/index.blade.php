@@ -16,6 +16,7 @@
             <div class="button">
                 <input type="button" onclick="location.href='{{route('contents.detail', ['contents_id' => $content['id']])}}'" value="詳細">
                 <input type="button" onclick="location.href='{{route('contents.edit', ['contents_id' => $content['id']])}}'" value="編集">
+                <input type="button" onclick="location.href='{{route('contents.destroy', ['contents_id' => $content['id']])}}'" value="削除">
             </div>
         @endforeach
     </div>

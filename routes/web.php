@@ -30,3 +30,4 @@ Route::post ('/contents/create', 'ContentController@create')->name('contents.cre
 Route::get ('/contents/detail/{contents_id}', 'ContentController@detail')->name('contents.detail');
 Route::get ('/contents/edit/{contents_id}', 'ContentController@edit')->name('contents.edit');
 Route::post ('/contents/save', 'ContentController@save')->name('contents.save');
+Route::get ('/contents/destroy/{contents_id}', 'ContentController@destroy')->name('contents.destroy');

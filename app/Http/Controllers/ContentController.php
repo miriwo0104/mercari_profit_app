@@ -24,7 +24,7 @@ class ContentController extends Controller
         $new_content->title = $request['title'];
         $new_content->memo = $request['memo'];
         $new_content->save();
-        
+
         return redirect(route('contents.index'));
     }
 
@@ -47,6 +47,13 @@ class ContentController extends Controller
         $content->memo = $request['memo'];
         $content->save();
 
+        return redirect(route('contents.index'));
+    }
+
+    public function destroy($content_id)
+    {
+        $content = Content::find($content_id);
+        $content->delete();
         return redirect(route('contents.index'));
     }
 }
