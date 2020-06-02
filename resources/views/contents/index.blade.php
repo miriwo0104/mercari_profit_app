@@ -4,7 +4,7 @@
     </div>
     <div class="link">
         <div class="new">
-
+            <input type="button" onclick="location.href='{{route('contents.new')}}'" value="コンテンツ">
         </div>
     </div>
     <div class="main_contents">

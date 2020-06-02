@@ -12,4 +12,14 @@ class ContentController extends Controller
         $contents = Content::all();
         return view('contents.index', ['contents' => $contents]);
     }
+
+    public function new()
+    {
+        return view('contents.new');
+    }
+
+    public function create(Request $request)
+    {
+        return redirect(route('contents.index'));
+    }
 }

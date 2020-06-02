@@ -25,3 +25,5 @@ Route::get ('/user_home', 'UserHomeController@index')->name('user.home.index');
 Route::get ('/settings/index', 'SettingController@index')->name('settings.index');
 
 Route::get ('/contents/index', 'ContentController@index')->name('contents.index');
+Route::get ('/contents/new', 'ContentController@new')->name('contents.new');
+Route::post ('/contents/create', 'ContentController@create')->name('contents.create');
