@@ -20,6 +20,10 @@ class ContentController extends Controller
 
     public function create(Request $request)
     {
+        $new_content = new Content();
+        $new_content->title = $request['title'];
+        $new_content->memo = $request['memo'];
+        $new_content->save();
         return redirect(route('contents.index'));
     }
 }
